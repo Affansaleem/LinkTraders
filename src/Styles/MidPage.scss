@@ -1,0 +1,39 @@
+/* MidPage.scss */
+.mid-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.text-overlay {
+  position: relative;
+  font-size: 6rem;
+  font-weight: bold;
+  color: white; /* Set the text color */
+  text-align: center;
+  z-index: 1; /* Ensure text appears above the video */
+}
+
+.text-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("logos/linkstraders.png"); /* Replace with a transparent image */
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  mix-blend-mode: multiply; /* Blend the video with the text */
+}

@@ -1,0 +1,23 @@
+.contact-us-container {
+  width: 100%;
+  height: max-content;
+}
+
+.background-image {
+  position: relative;
+  width: 100%;
+}
+
+.background-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: #ffffff;
+}

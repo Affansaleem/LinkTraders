@@ -1,0 +1,54 @@
+.hollow-text {
+  color: transparent;
+  -webkit-text-stroke: 2px white; /* Adjust the width of the stroke as needed */
+  text-stroke: 2px white;
+  text-shadow: 0 0 0 white; /* Use the shadow to "cut out" the text */
+}
+// GridLayout.scss
+
+.grid-item {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  // Add box shadow for a raised effect
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  // Add some border radius for rounded corners
+  border-radius: 10px;
+  // Add a transition for smoother hover effects
+  transition: all 0.3s ease;
+}
+
+.grid-item:hover {
+  // Darken the background color on hover
+  background-color: #c7c7c7;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.logo-slider {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.w-auto {
+  width: auto;
+}
